@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="images/image.png" alt="User Avatar" />
+    <h2>Login</h2>
+
+    <form id="login-form">
+      <h2>Welcome to Tagu-taguan</h2>
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <button id="dashboard-button" onclick="location.href='index2.html'">Back to Dashboard</button>
+    </form>
+
+    <div class="toggle">
+      Don't have an account? <a href="register.html">Register</a>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tagu-Taguan Web Game</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <!-- Level Selection -->
+  <div id="level-selection">
+    <h2>Select Difficulty and Level</h2>
+    <div id="difficulty-buttons">
+      <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+      <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+      <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+    </div>
+    <div id="level-buttons"></div>
+  </div>
+
+  <!-- Info Bar -->
+  <div id="info-bar" style="display: none;">
+    <div id="score">Score: 0</div>
+    <div id="timer">Time: 30s</div>
+    <div id="hider-indicator">Hiders: 1</div>
+    <div id="level">Level: 1</div> <!-- New Level Indicator -->
+  </div>
+  
+  <!-- Game Container -->
+  <div id="game-container" style="display: none;">
+    <div id="message-container">
+      <div id="message">You found the hider! 🎉</div>
+      <button id="retry-button">Retry</button>
+      <button id="next-button">Next Level</button>
+      <button id="main-menu-button">Main Menu</button> <!-- New Main Menu Button -->
+    </div>
+  </div>
+
+  <!-- Dashboard Button (Visible only during difficulty selection) -->
+  <div id="dashboard-button-container">
+    <button id="dashboard-button" onclick="window.location.href='dashboard.html';">Dashboard</button>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
